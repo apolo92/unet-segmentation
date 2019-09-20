@@ -66,9 +66,9 @@ def div_img_to_mask(mask, img):
 
 
 #RGB category mask colors
-label_codes = [(0, 0, 128), (0, 128, 0), (0, 128, 128), (128, 0, 0), (0, 0, 0)]
+label_codes = [(0, 128, 0),(0, 0, 128), (0, 0, 0)]
 #category labels for segmentation
-label_names = ['logo', 'info1', 'info2', 'table', 'black']
+label_names = ['dog', 'cat', 'bg',]
 
 code2id = {v:k for k,v in enumerate(label_codes)}
 id2code = {k:v for k,v in enumerate(label_codes)}
